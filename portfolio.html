@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | NUSANTARA D'STUDIO</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .portfolio-grid {
+            transition: height 0.5s ease-in-out;
+        }
+
+        .portfolio-item {
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/global/logoNn.png" alt="Logo" height="40" class="me-2">
+                <span class="fw-bold">D'STUDIO</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="portfolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="py-5 mt-5">
+        <div class="container">
+            <h1 class="text-center display-4 fw-bold pt-4 mb-4 animate__animated animate__fadeInDown">
+                <i class="bi bi-image-fill me-3" style="color: var(--primary-color);"></i>Portofolio Karya Kami
+            </h1>
+            <p class="lead text-center text-muted mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+                Jelajahi beragam proyek desain interior dan arsitektur Nusantara yang telah kami wujudkan.
+            </p>
+            <div class="row justify-content-center mb-4 animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="col-lg-8">
+                    <ul class="list-inline text-center portfolio-filters">
+                        <li class="list-inline-item"><button class="btn btn-sm btn-outline-secondary active"
+                                data-filter="all"><i class="bi bi-border-all me-1"></i>Semua Proyek</button></li>
+                        <li class="list-inline-item"><button class="btn btn-sm btn-outline-secondary"
+                                data-filter="residential"><i class="bi bi-house-fill me-1"></i>Hunian</button></li>
+                        <li class="list-inline-item"><button class="btn btn-sm btn-outline-secondary"
+                                data-filter="commercial"><i class="bi bi-shop-fill me-1"></i>Komersial</button></li>
+                        <li class="list-inline-item"><button class="btn btn-sm btn-outline-secondary"
+                                data-filter="public"><i class="bi bi-building-fill me-1"></i>Publik</button></li>
+                        <li class="list-inline-item"><button class="btn btn-sm btn-outline-secondary"
+                                data-filter="restoration"><i class="bi bi-bricks me-1"></i>Restorasi</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-grid" id="portfolio-grid">
+                <div class="col-md-6 col-lg-4 residential portfolio-item">
+                    <div class="card border-0 shadow card-hover-shadow">
+                        <img src="img/rumahJogloKontemporer.png" class="card-img-top" alt="Rumah Joglo Kontemporer">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Rumah Joglo Kontemporer</h5>
+                            <p class="card-text text-muted">Desain hunian yang memadukan arsitektur tradisional Jawa
+                                dengan sentuhan modern.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 commercial portfolio-item">
+                    <div class="card border-0 shadow card-hover-shadow">
+                        <img src="img/kafeBatikModern.png" class="card-img-top" alt="Kafe Batik Modern">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Kafe Batik Modern</h5>
+                            <p class="card-text text-muted">Interior kafe yang terinspirasi dari motif batik dengan tata
+                                ruang kontemporer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 public portfolio-item">
+                    <div class="card border-0 shadow card-hover-shadow">
+                        <img src="img/pendopoBalaiDesa.png" class="card-img-top" alt="Pendopo Balai Desa">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Pendopo Balai Desa</h5>
+                            <p class="card-text text-muted">Revitalisasi pendopo desa dengan mempertahankan elemen
+                                arsitektur tradisional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 residential portfolio-item">
+                    <div class="card border-0 shadow card-hover-shadow">
+                        <img src="img/villaEtnikBali.png" class="card-img-top" alt="Villa Etnik Bali">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Villa Etnik Bali</h5>
+                            <p class="card-text text-muted">Desain villa dengan penggunaan material lokal dan ornamen
+                                khas
+                                Bali.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 commercial portfolio-item">
+                    <div class="card border-0 shadow card-hover-shadow">
+                        <img src="img/restoranJawaTradisional.png" class="card-img-top" alt="Restoran Jawa Tradisional">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Restoran Jawa Tradisional</h5>
+                            <p class="card-text text-muted">Interior restoran yang menciptakan suasana otentik Jawa
+                                dengan
+                                ukiran dan warna hangat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 public portfolio-item">
+                    <div class="card border-0 shadow card-hover-shadow">
+                        <img src="img/renovasiMuseumTekstil.png" class="card-img-top" alt="Renovasi Museum Tekstil">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Renovasi Museum Tekstil</h5>
+                            <p class="card-text text-muted">Proyek renovasi museum tekstil dengan fokus pada pelestarian
+                                dan presentasi warisan budaya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 restoration portfolio-item">
+                    <div class="card border-0 shadow card-hover-shadow">
+                        <img src="img/restorasiRumahKuno.png" class="card-img-top" alt="Restorasi Rumah Kuno">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Restorasi Rumah Kuno</h5>
+                            <p class="card-text text-muted">Proyek restorasi rumah kuno dengan mempertahankan struktur
+                                asli dan nilai sejarah.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 residential portfolio-item">
+                    <div class="card border-0 shadow card-hover-shadow">
+                        <img src="img/apartemenEtnikModern.png" class="card-img-top" alt="Apartemen Etnik Modern">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Apartemen Etnik Modern</h5>
+                            <p class="card-text text-muted">Desain interior apartemen dengan sentuhan etnik yang elegan
+                                dan
+                                fungsional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 commercial portfolio-item">
+                    <div class="card border-0 shadow card-hover-shadow">
+                        <img src="img/hotelNuansaTradisional.png" class="card-img-top"
+                            alt="Hotel Nuansa Tradisional">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Hotel Nuansa Tradisional</h5>
+                            <p class="card-text text-muted">Desain hotel yang memancarkan kehangatan dan keindahan
+                                budaya
+                                lokal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 animate__animated animate__fadeInUp animate__delay-3s">
+                <p class="text-muted">Ingin melihat lebih banyak karya kami? <a href="contact.html">Hubungi kami</a>
+                    untuk informasi lengkap.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>NUSANTARA D'STUDIO</h5>
+                    <p class="text-muted">Dedikasi pada desain interior tradisional Indonesia yang otentik dan memukau.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="portfolio.html" class="text-white text-decoration-none">Portofolio</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none">Layanan</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">Tentang Kami</a></li>
+                        <li><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Hubungi Kami</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><i class="bi bi-envelope me-2"></i>Email: info@nusantaradstudio.com</li>
+                        <li><i class="bi bi-phone me-2"></i>Telepon: +62 812-3456-7890</li>
+                        <li><i class="bi bi-geo-alt me-2"></i>Alamat: Jl. Raya No. 123, Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3 border-secondary">
+            <div class="text-center text-muted">
+                <p>© 2025 NUSANTARA D'STUDIO. Hak Cipta Dilindungi Undang-Undang.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterContainer = document.querySelector('.portfolio-filters');
+            const portfolioGrid = document.getElementById('portfolio-grid');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+            // Fungsi untuk menampilkan item dengan efek fade
+            function showItems(items) {
+                items.forEach(item => {
+                    item.style.display = 'block';
+                    // Paksa browser untuk merender perubahan display sebelum mengubah opacity
+                    item.offsetHeight;
+                    item.style.opacity = '1';
+                });
+            }
+
+            // Fungsi untuk menyembunyikan item dengan efek fade
+            function hideItems(items) {
+                items.forEach(item => {
+                    item.style.opacity = '0';
+                });
+                setTimeout(() => {
+                    items.forEach(item => item.style.display = 'none');
+                }, 300); // Harus sama dengan durasi transisi
+            }
+
+            // Fungsi utama untuk memfilter item
+            function filterPortfolio(filterValue) {
+                // Sembunyikan semua item yang tidak sesuai dengan filter
+                const itemsToHide = Array.from(portfolioItems).filter(item => {
+                    return filterValue !== 'all' && !item.classList.contains(filterValue);
+                });
+                hideItems(itemsToHide);
+
+                // Tampilkan semua item yang sesuai dengan filter
+                const itemsToShow = Array.from(portfolioItems).filter(item => {
+                    return filterValue === 'all' || item.classList.contains(filterValue);
+                });
+
+                // Set tinggi grid agar tidak bergeser saat transisi
+                const currentHeight = portfolioGrid.offsetHeight;
+                portfolioGrid.style.height = `${currentHeight}px`;
+
+                // Tunda sedikit untuk memungkinkan transisi menyembunyikan item
+                setTimeout(() => {
+                    showItems(itemsToShow);
+
+                    // Hitung tinggi baru setelah item yang akan ditampilkan berada di DOM
+                    const newHeight = portfolioGrid.scrollHeight;
+                    portfolioGrid.style.height = `${newHeight}px`;
+                }, 300); // Harus sama dengan durasi transisi menyembunyikan
+
+                // Kembalikan tinggi ke auto setelah transisi selesai
+                setTimeout(() => {
+                    portfolioGrid.style.height = 'auto';
+                }, 800); // Sesuaikan durasi total transisi
+            }
+
+            // Tampilkan semua item saat halaman pertama kali dimuat
+            filterPortfolio('all');
+
+            // Event listener untuk tombol filter
+            filterContainer.addEventListener('click', (e) => {
+                if (e.target.classList.contains('btn')) {
+                    filterContainer.querySelector('.active').classList.remove('active');
+                    e.target.classList.add('active');
+                    const filterValue = e.target.getAttribute('data-filter');
+                    filterPortfolio(filterValue);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

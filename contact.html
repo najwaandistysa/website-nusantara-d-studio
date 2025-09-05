@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | NUSANTARA D'STUDIO</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="preloader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/global/logoNn.png" alt="Logo" height="40" class="me-2">
+          <span class="fw-bold">D'STUDIO</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portofolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Layanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="py-5 mt-5">
+      <div class="container">
+        <h1 class="text-center display-4 fw-bold pt-4 mb-4 animate__animated">Hubungi Kami</h1>
+        <p class="lead text-center text-muted mb-5 animate__animated animate__delay-1s">Mari diskusikan proyek interior
+          impian Anda bersama tim profesional kami.</p>
+
+        <div class="row g-4">
+          <div class="col-md-7 animate__animated animate__fadeInLeft">
+            <form id="contactForm" class="p-4 border rounded shadow-sm bg-white">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" required placeholder="Minimal 5, maksimal 20 karakter">
+                <div id="nameError" class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Anda</label>
+                <input type="email" class="form-control" id="email" required placeholder="ex889@gmail.com">
+                <div id="emailError" class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Buat Password (Untuk Akun Baru)</label>
+                <input type="password" class="form-control" id="password"
+                  placeholder="Min. 8 karakter, huruf besar/kecil, angka">
+                <div id="passwordError" class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Pesan Anda</label>
+                <textarea class="form-control" id="message" rows="5" required
+                  placeholder="Tulis pesan Anda di sini (minimal 10 karakter)"></textarea>
+                <div id="messageError" class="invalid-feedback"></div>
+              </div>
+              <button type="submit" class="btn btn-custom-primary">Kirim Pesan</button>
+            </form>
+          </div>
+          <div class="col-md-5 animate__animated animate__fadeInRight">
+            <div class="p-4 border rounded shadow-sm bg-white">
+              <h4 class="section-title-small">Informasi Studio</h4>
+              <p><strong>Alamat:</strong> Jl. Raya No. 123, Jakarta, Indonesia</p>
+              <p><strong>Telepon:</strong> +62 812-3456-7890</p>
+              <p><strong>Email:</strong> info@nusantaradstudio.com</p>
+              <p><strong>Jam Buka:</strong></p>
+              <ul>
+                <li>Senin - Jumat: 09.00 - 17.00 WIB</li>
+                <li>Sabtu - Minggu: Tutup</li>
+              </ul>
+              <div class="mt-4">
+                <h4 class="section-title-small">Temukan Kami di Peta</h4>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.381370966835!2d106.8214873147699!3d-6.212007895493214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f417e2c94389%3A0xf639a06143c7b39a!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1628045610815!5m2!1sen!2sid"
+                  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>NUSANTARA D'STUDIO</h5>
+            <p class="text-muted">Dedikasi pada desain interior tradisional Indonesia yang otentik dan memukau.</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Tautan Cepat</h5>
+            <ul class="list-unstyled">
+              <li><a href="portfolio.html" class="text-white text-decoration-none">Portofolio</a></li>
+              <li><a href="services.html" class="text-white text-decoration-none">Layanan</a></li>
+              <li><a href="about.html" class="text-white text-decoration-none">Tentang Kami</a></li>
+              <li><a href="blog.html" class="text-white text-decoration-none">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Hubungi Kami</h5>
+            <ul class="list-unstyled text-muted">
+              <li>Email: info@nusantaradstudio.com</li>
+              <li>Telepon: +62 812-3456-7890</li>
+              <li>Alamat: Jl. Raya No. 123, Jakarta, Indonesia</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-3 border-secondary">
+        <div class="text-center text-muted">
+          <p>© 2025 NUSANTARA D'STUDIO. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+      </div>
+    </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
